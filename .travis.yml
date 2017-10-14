@@ -86,6 +86,7 @@ script:
     - cd for_testing
     - if [ "${COVERAGE}" == "1" ]; then
       cp ../.coveragerc .;
+      ls -alhrt;
       COVER_ARGS="--with-coverage --cover-package bruker2nifti";
       fi
     - if [ "${DOCTESTS}" == "1" ]; then
